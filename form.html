@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form validation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="login">
+      <div class="video">
+        <video autoplay loop muted playes-inline class="back-video">
+            <source src="Images/pexels-francesco-ungaro-5289511.mp4">
+        </video>
+      </div>
+    <div class="e-wrapper">
+    <form action="" method="POST" id="registration">
+  
+      
+      <div>
+        <label class="label" for="username">First Name</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="First Name.."
+        />
+        <div class="error-text" id="error_username"></div>
+     
+      </div>
+      <div>
+        <label class="label" for="username">Last Name</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Last name.."
+        />
+        <div class="error-text" id="error_username"></div>
+     </div>
+
+      <div class="allpass">
+      <div class="password1">
+      <div>
+        <label class="label" for="passw">Password</label>
+        <input
+          type="password"
+          id="passw"
+          name="password"
+          placeholder="password.."
+        />
+        <div class="error-text" id="error_password"></div>
+      </div>
+    </div>
+      <div class="reppass">
+        <div class="password-field">
+        <label class="label" for="passw2">Confirm Password</label>
+        <input
+          type="password"
+          id="showpassword"
+          name="mypassword"
+          placeholder="Confirm password.."
+          
+        />
+        <i class="fa-solid fa-eye" id="toggleIcon"></i>
+      </div>
+        <div class="error-text" id="error_password2"></div>
+      </div>
+    </div>
+    <div class="email">
+      <form action="" id="formEmail" >
+        <div class="input-email">
+          <label class="label" for="email">Email Address</label>
+          <input  type="email" id="email" name="myemail" placeholder="ex: myname@example.com"/>
+          <span id="text"></span>
+        </div>
+      </form>
+    </div>
+    <div class="gender">
+      <div>
+        <input type="radio" name="gender" />
+        <label for="">Male</label>
+        <input type="radio" name="gender" />
+        <label for="">Female</label>
+        <div class="error-text" id="error_gender"></div>
+      </div>
+    </div>
+    <div class="agreement">
+      <div>
+        <input type="checkbox" name="agree" id="agree" />
+        <label for="">I agree terms and conditions</label>
+        <div class="error-text" id="error_agree"></div>
+      </div>
+    </div>
+    <div class="butt">
+      <button class="button" type="submit">Submit Form</button>
+    </div>
+    </form>
+  </div>
+</section>
+    <script src="validtion.js"></script>
+  </body>
+</html>
